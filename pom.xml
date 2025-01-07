@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.jbedu</groupId>
 	<artifactId>oracle</artifactId>
-	<name>spring_oracle_board_250106</name>
+	<name>spring_oracle_board-20250106</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 	<properties>
@@ -117,33 +117,34 @@
 			<scope>test</scope>
 		</dependency>
 		
-		<!-- SPRING JDBC 라이브러리 추가 -->
+		<!-- SPRING JDBC 라이브러리 -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
 			<version>4.1.4.RELEASE</version>
 		</dependency>
 		
-		<!-- MySql JDBC 라이브러리 추가 -->
+		<!-- Oracle JDBC 라이브러리 --> 
 		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.31</version>
+			<groupId>com.oracle.database.jdbc</groupId>
+			<artifactId>ojdbc11</artifactId>
+			<version>21.1.0.0</version>
 		</dependency>
 		
-		<!-- Mybatis 라이브러리 추가 -->
-		<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
+		<!-- Mybatis 라이브러리 -->		
 		<dependency>
-		    <groupId>org.mybatis</groupId>
-		    <artifactId>mybatis</artifactId>
-		    <version>3.2.8</version>
+    		<groupId>org.mybatis</groupId>
+    		<artifactId>mybatis</artifactId>
+    		<version>3.2.8</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
+		
+		<!-- mybatis-spring 라이브러리 -->
 		<dependency>
 		    <groupId>org.mybatis</groupId>
 		    <artifactId>mybatis-spring</artifactId>
 		    <version>1.2.2</version>
 		</dependency>
+		        
 	</dependencies>
     <build>
         <plugins>
